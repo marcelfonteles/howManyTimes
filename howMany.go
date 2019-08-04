@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"encoding/csv"
 	"fmt"
-	utils "howMany/pkg"
+	utils "howManyTimes/pkg"
 	"os"
 	"strings"
 	"time"
@@ -26,7 +26,7 @@ func main() {
 	var texto [][]string
 	// Preparando o Arquivo para receber os dados
 	//file, _ := os.Open("/home/marcelvieira/go/bin/result.csv")
-	//file, _ :=    os.Create("/home/marcelvieira/go/bin/result.csv")
+	file, _ :=    os.Create("/home/marcelvieira/go/bin/result.csv")
 	defer file.Close()
 	writer := csv.NewWriter(file)
 	leitor := csv.NewReader(file)
